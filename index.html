@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Pages with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page</h1>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Part 1: Event Handling Demo -->
+  <section class="interactive-section">
+    <h2>Part 1: Event Handling</h2>
+    <button id="message-btn">Click Me</button>
+    <p id="message-output"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section class="interactive-section">
+    <h2>Part 2: Interactive Elements</h2>
+
+    <!-- Counter Game -->
+    <div class="counter">
+      <h3>Counter Game</h3>
+      <p>Score: <span id="counter-value">0</span></p>
+      <button id="increase-btn">Increase</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+      <h3>FAQ Section</h3>
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer">JavaScript makes web pages interactive and dynamic.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Why learn JavaScript?</button>
+        <p class="faq-answer">Because it powers almost everything on the web.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra Feature: Tabbed Interface -->
+  <section class="interactive-section">
+    <h2>Extra Feature: Tabbed Interface</h2>
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+        <button class="tab-btn" data-tab="tab3">Tab 3</button>
+      </div>
+      <div class="tab-content active" id="tab1">
+        <p>This is the content for Tab 1.</p>
+      </div>
+      <div class="tab-content" id="tab2">
+        <p>This is the content for Tab 2.</p>
+      </div>
+      <div class="tab-content" id="tab3">
+        <p>This is the content for Tab 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section class="interactive-section">
+    <h2>Part 3: Form Validation</h2>
+    <form id="signup-form">
+      <label>
+        Name: <input type="text" id="name" />
+        <span class="error" id="name-error"></span>
+      </label>
+      <label>
+        Email: <input type="text" id="email" />
+        <span class="error" id="email-error"></span>
+      </label>
+      <label>
+        Password: <input type="password" id="password" />
+        <span class="error" id="password-error"></span>
+      </label>
+      <button type="submit">Sign Up</button>
+      <p id="form-success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
